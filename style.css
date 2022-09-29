@@ -3,18 +3,20 @@
     padding: 0;
     margin: 0;
 }
-.section3 {
+.section1 {
     background-color: #c3e288;
     padding: 64px;
+    max-height:auto;
 }
 .row:after {
     content: "";
     display: table;
     clear: both
 }
-.row {
+.section1  .row {
     max-width: 1100px;
     margin: auto;
+    
 }
 
 .column-33 {
@@ -47,12 +49,15 @@
 }
 
 .column-66 p{
-   font-size: 50px;
-     color: white;
-  text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+font-weight: 700;
+    font-size: 7.75rem;
+    line-height: 1;
+    margin: 0 0 -105px auto;
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+    color: white;
 }
 
-.button {
+.section1 .button {
     border: none;
     color: white;
     padding: 14px 28px;
@@ -61,12 +66,92 @@
     background-color: #f9fcf2 !important;
     color: black;
 }
+
 img {
     display: block;
     height: 400px;
     max-width: 100%;
     box-shadow: -40px -40px 0px #fff;
 }
+
+
+
+
+
+.section2 .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.section2 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.section2 .row
+{
+     max-width: 1100px;
+    margin: auto;
+    
+}
+
+
+.section2 .box{
+    width: 136px;
+    background-image: none;
+    height: 129px;
+    margin: 37px auto 0 0;
+   background-color: #f2d8bb;
+}
+
+.section2 h1
+{
+     margin: -75px auto 0 0px;
+   
+}
+
+.section2 .column{
+    
+      margin: -75px auto 0 0px;
+}
+
+
+.section2 h1
+{
+     margin: 5px auto 0 0px;
+   
+}
+
+.section2 .button
+{
+    margin-top: 20px;
+    background-color: white;
+     border: 1px solid black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+   
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .section2 .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .column-66,
     .column-33 {
@@ -82,6 +167,11 @@ img {
     .column-33 h1 {
         max-width: 500px;
     }
+    
+    
+    .section1 {
+  max-height: auto;
+}
     img {
         margin: auto;
         max-width: 100%;
