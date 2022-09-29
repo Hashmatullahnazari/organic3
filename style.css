@@ -8,31 +8,31 @@
     padding: 64px;
     max-height:auto;
 }
-.row:after {
+.section1 .row:after {
     content: "";
     display: table;
     clear: both
 }
-.section1  .row {
+.section1 .row {
     max-width: 1100px;
     margin: auto;
     
 }
 
-.column-33 {
+.section1 .column-33 {
     float: left;
     width: 50%;
 }
-.column-33 p {
+.section1  .column-33 p {
     max-width: 500px;
     margin-right: 100px;
     padding: 20px 0px 35px 0px;
 }
-.column-33 h1 {
+.section1  .column-33 h1 {
     margin: -75px auto 0 0px;
     max-width: 500px;
 }
-.column-33 .box {
+.section1  .column-33 .box {
     width: 135px;
     height: 135px;
     background-image: none;
@@ -42,13 +42,13 @@
 }
 
 
-.column-66 {
+.section1 .column-66 {
     float: left;
     width: 50%;
     padding: 20px;
 }
 
-.column-66 p{
+.section1 .column-66 p{
 font-weight: 700;
     font-size: 7.75rem;
     line-height: 1;
@@ -67,7 +67,7 @@ font-weight: 700;
     color: black;
 }
 
-img {
+.section1 img {
     display: block;
     height: 400px;
     max-width: 100%;
@@ -76,14 +76,13 @@ img {
 
 
 
-
-
 .section2 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  
 }
+
 
 /* Clear floats after the columns */
 .section2 .row:after {
@@ -138,6 +137,103 @@ img {
     color: black;
    
 }
+
+.section2 hr { 
+opacity: 1.5;
+position: absolute;
+width: 227px;
+transform-origin: left center 0;
+margin: -23px -22px 0 140px;
+} 
+
+.section2 .box1
+{
+width: 135px;
+height: 135px;
+background-image: none;
+margin: -80px auto 0 301px;
+background-color: #c3e288;
+color: #111111;
+}
+
+
+.section3 {
+  background-image: url(https://images01.nicepage.com/c8/13/c813be9ce139f19d85250208ac8fd2b1.jpeg);
+       
+       padding: 64px;
+    background-position: 50% 100%;
+}
+
+.section3 .row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.section3 .row {
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.section3 .column-33 {
+    float: left;
+    padding-left: 100px;
+    width: 50%;
+}
+.section3  .column-33 p {
+    max-width: 500px;
+    margin-right: 100px;
+    padding: 20px 0px 35px 0px;
+}
+.section3  .column-33 h1 {
+    margin: -75px auto 0 0px;
+    max-width: 500px;
+}
+.section3  .column-33 .box {
+    width: 135px;
+    height: 135px;
+    background-image: none;
+    margin: -41px auto 0 -40px;
+    opacity: 0.45;
+    background: white;
+}
+
+
+.section3 .column-66 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.section3 .column-66 p{
+font-weight: 700;
+    font-size: 7.75rem;
+    line-height: 1;
+    margin: 0 0 -105px auto;
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+    color: white;
+}
+
+.section3 .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f9fcf2 !important;
+    color: black;
+}
+
+.section3 img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    box-shadow: 25px -30px 0px 1px #fff;
+}
+
+
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .section2 .column {
@@ -153,23 +249,50 @@ img {
 
 
 @media screen and (max-width: 1000px) {
-    .column-66,
-    .column-33 {
+    .section1 .column-66,
+    .section1 .column-33 {
         width: 100%;
         text-align: center;
         padding-bottom: 45px;
     }
-    .column-33 p {
+    .section1 .column-33 p {
         max-width: 100%;
         margin: 0;
         padding: 20px;
     }
-    .column-33 h1 {
+    .section1 .column-33 h1 {
         max-width: 500px;
     }
     
     
     .section1 {
+  max-height: auto;
+}
+    img {
+        margin: auto;
+        max-width: 100%;
+    }
+    
+    
+  
+    
+      .section3 .column-66,
+    .section3 .column-33 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 45px;
+    }
+    .section3 .column-33 p {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .section3 .column-33 h1 {
+        max-width: 500px;
+    }
+    
+    
+    .section3 {
   max-height: auto;
 }
     img {
