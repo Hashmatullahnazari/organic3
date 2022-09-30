@@ -2,6 +2,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+font-family: 'Poiret One', cursive;
+
 }
 .section1 {
     background-color: #c3e288;
@@ -74,7 +76,10 @@ font-weight: 700;
     box-shadow: -40px -40px 0px #fff;
 }
 
-
+.section2
+{
+    padding: 50px;
+}
 
 .section2 .column {
   float: left;
@@ -139,11 +144,11 @@ font-weight: 700;
 }
 
 .section2 hr { 
-opacity: 1.5;
-position: absolute;
-width: 227px;
-transform-origin: left center 0;
-margin: -23px -22px 0 140px;
+    opacity: 1.5;
+    position: absolute;
+    width: 200px;
+    margin: -23px -8px 0 158px;
+    margin: -22px 0px 0px 137px;
 } 
 
 .section2 .box1
@@ -234,12 +239,210 @@ font-weight: 700;
 
 
 
+
+.section4
+{
+    padding: 50px;
+}
+
+.section4 .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+}
+
+
+/* Clear floats after the columns */
+.section4 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.section4 .row
+{
+     max-width: 1100px;
+    margin: auto;
+    
+}
+
+
+.section4 .box{
+    width: 136px;
+    background-image: none;
+    height: 129px;
+    margin: 37px auto 0 0;
+   background-color: #afe7f6;
+}
+
+.section4 h1
+{
+     margin: -75px auto 0 0px;
+   
+}
+
+.section4 .column{
+    
+      margin: -75px auto 0 0px;
+}
+
+
+.section4 h1
+{
+     margin: 5px auto 0 0px;
+   
+}
+
+.section4 .button
+{
+    margin-top: 20px;
+    background-color: white;
+     border: 1px solid black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+   
+}
+
+.section4 hr { 
+     opacity: 1.5;
+    position: absolute;
+    width: 200px;
+    margin: -23px -8px 0 158px;
+    margin: -22px 0px 0px 137px;
+} 
+
+.section4 .box1
+{
+width: 135px;
+height: 135px;
+background-image: none;
+margin: -80px auto 0 301px;
+background-color: #f2d8bb;
+color: #111111;
+}
+
+
+
+
+.section5 {
+  background-image: url(	https://images01.nicepage.com/06/f8/06f8a1168c3113dd4673ec64cb25d040.jpeg);
+       
+       padding: 64px;
+    background-position: 50% 80%;
+}
+
+.section5 .row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.section5 .row {
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.section5 .column-33 {
+    float: left;
+    padding-left: 100px;
+    width: 50%;
+}
+.section5  .column-33 p {
+    max-width: 500px;
+    margin-right: 100px;
+    padding: 20px 0px 35px 0px;
+}
+.section5  .column-33 h1 {
+    margin: -75px auto 0 0px;
+    max-width: 500px;
+}
+.section5  .column-33 .box {
+    width: 135px;
+    height: 135px;
+    background-image: none;
+    margin: -41px auto 0 -40px;
+    opacity: 0.45;
+    background: white;
+}
+
+
+.section5 .column-66 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.section5 .column-66 p{
+font-weight: 700;
+    font-size: 7.75rem;
+    line-height: 1;
+    margin: 0 0 -105px auto;
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+    color: white;
+}
+
+.section5 .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f9fcf2 !important;
+    color: black;
+}
+
+.section5 img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    box-shadow: 25px -30px 0px 1px #fff;
+}
+
+
+
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .section2 .column {
     width: 100%;
+      float: none;
+      padding-bottom: 75px;
+      padding-top: 50px;
   }
+    
+    
+    
+    
+    
+    .section2 .column h1
+{
+     margin: 5px auto 0 0px;
+   
+   
 }
+    
+    .section2 .box1
+{
+   
+   float: none;
+}
+    
+    .section2 hr
+    {
+        
+        float: none;
+        display: block;
+    }
+
+    
+}
+
+
 
 
 
@@ -279,6 +482,7 @@ font-weight: 700;
       .section3 .column-66,
     .section3 .column-33 {
         width: 100%;
+        float: none;
         text-align: center;
         padding-bottom: 45px;
     }
